@@ -1,6 +1,6 @@
 {
   "name": "@d2k/react-devto",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Dev.to hooks for Github API",
   "main": "src/index.js",
   "repository": "https://github.com/bdbch/react-devto",
