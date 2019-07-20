@@ -16,7 +16,9 @@
   ],
   "files": [
     "src/*.js",
-    "src/*.json"
+    "src/*.json",
+    "src/**/*.js",
+    "src/**/*.json"
   ],
   "scripts": {},
   "devDependencies": {
