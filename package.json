@@ -1,6 +1,6 @@
 {
   "name": "@d2k/react-devto",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Dev.to hooks for Github API",
   "main": "src/index.js",
   "repository": "https://github.com/bdbch/react-devto",
@@ -14,9 +14,7 @@
     "hooks",
     "github"
   ],
-  "scripts": {
-
-  },
+  "scripts": {},
   "devDependencies": {
     "@babel/core": "^7.2.2",
     "@babel/preset-env": "^7.3.1",
