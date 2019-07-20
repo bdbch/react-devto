@@ -2,7 +2,7 @@
   "name": "@d2k/react-devto",
   "version": "1.0.1",
   "description": "Dev.to hooks for Github API",
-  "main": "lib/react-devto.js",
+  "main": "src/index.js",
   "repository": "https://github.com/bdbch/react-devto",
   "author": "@d2k",
   "license": "MIT",
@@ -15,11 +15,7 @@
     "github"
   ],
   "scripts": {
-    "publish-demo": "rm -rf ./dist && parcel build --public-url /react-devto docs/index.html && npm run gh-pages",
-    "publish": "npm run build",
-    "build": "rm -rf ./lib && webpack --config ./webpack/config.prod.js",
-    "start": "rm -rf ./lib && webpack --config ./webpack/config.dev.js",
-    "gh-pages": "gh-pages -d ./dist"
+
   },
   "devDependencies": {
     "@babel/core": "^7.2.2",
@@ -28,11 +24,7 @@
     "browser-env": "3.2.6",
     "gh-pages": "^2.0.1",
     "parcel": "1.12.2",
-    "raf": "3.4.1",
-    "react": "^16.8.4",
-    "react-dom": "^16.8.4",
-    "react-test-renderer": "^16.8.4",
-    "webpack": "^4.29.0",
-    "webpack-cli": "^3.2.1"
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
   }
 }
