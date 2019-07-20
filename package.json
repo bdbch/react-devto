@@ -18,13 +18,13 @@
     "src/index.js"
   ],
   "scripts": {
-    "publish": "parcel build docs/index.html",
+    "publish": "parcel build docs/index.html && npm run gh-pages",
     "start": "parcel docs/index.html",
-    "release": "np"
+    "gh-pages": "gh-pages -d ./dist"
   },
   "devDependencies": {
     "browser-env": "3.2.6",
-    "np": "*",
+    "gh-pages": "^2.0.1",
     "parcel": "1.12.2",
     "raf": "3.4.1",
     "react": "^16.8.4",
