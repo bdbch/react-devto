@@ -18,7 +18,7 @@
     "src/index.js"
   ],
   "scripts": {
-    "publish": "parcel build docs/index.html && npm run gh-pages",
+    "publish": "rm -rf ./dist && parcel build --public-url /react-devto docs/index.html && npm run gh-pages",
     "start": "parcel docs/index.html",
     "gh-pages": "gh-pages -d ./dist"
   },
