@@ -20,7 +20,7 @@
     "src/*.json",
     "src/**/*.js",
     "src/**/*.json",
-    "./types.d.ts"
+    "types.d.ts"
   ],
   "scripts": {},
   "devDependencies": {
