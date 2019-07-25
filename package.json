@@ -3,6 +3,7 @@
   "version": "1.0.4",
   "description": "Dev.to hooks for Github API",
   "main": "src/index.js",
+  "types": "types.d.ts",
   "repository": "https://github.com/bdbch/react-devto",
   "author": "@d2k",
   "license": "MIT",
@@ -18,7 +19,8 @@
     "src/*.js",
     "src/*.json",
     "src/**/*.js",
-    "src/**/*.json"
+    "src/**/*.json",
+    "types.d.ts"
   ],
   "scripts": {},
   "devDependencies": {
