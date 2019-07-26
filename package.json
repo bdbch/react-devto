@@ -2,8 +2,8 @@
   "name": "@d2k/react-devto",
   "version": "1.0.5",
   "description": "Dev.to hooks for Github API",
-  "main": "src/index.js",
-  "types": "types.d.ts",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "repository": "https://github.com/bdbch/react-devto",
   "author": "@d2k",
   "license": "MIT",
@@ -16,21 +16,18 @@
     "github"
   ],
   "files": [
-    "src/*.js",
-    "src/*.json",
-    "src/**/*.js",
-    "src/**/*.json",
-    "types.d.ts"
+    "dist/**/*.*"
   ],
-  "scripts": {},
+  "scripts": {
+    "prepublish": "npm run build",
+    "start": "tsc --watch",
+    "build": "npm run clean && tsc",
+    "clean": "rm -rf ./dist"
+  },
   "devDependencies": {
-    "@babel/core": "^7.2.2",
-    "@babel/preset-env": "^7.3.1",
-    "babel-loader": "^8.0.6",
-    "browser-env": "3.2.6",
-    "gh-pages": "^2.0.1",
-    "parcel": "1.12.2",
+    "@types/react": "^16.8.23",
     "react": "^16.8.6",
-    "react-dom": "^16.8.6"
+    "react-dom": "^16.8.6",
+    "typescript": "^3.5.3"
   }
 }
