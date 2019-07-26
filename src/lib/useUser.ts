@@ -14,7 +14,7 @@ export default function useUser(username?: string, id?: string): IUserResponse {
           ? `https://dev.to/api/users/${id}`
           : `https://dev.to/api/users/by_username?url=${username}`;
 
-      setError(null);
+      setError(undefined);
       setLoading(true);
       fetch(apiUrl)
         .then(res => res.json())

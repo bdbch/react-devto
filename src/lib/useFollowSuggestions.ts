@@ -11,7 +11,7 @@ export default function useFollowSuggestions(): IFollowSuggestionsResponse {
     let apiUrl = "https://dev.to/api/users/?state=follow_suggestions";
 
     setLoading(true);
-    setError(null);
+    setError(undefined);
     fetch(apiUrl)
       .then(res => res.json())
       .then(data => {

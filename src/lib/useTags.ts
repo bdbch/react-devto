@@ -13,7 +13,7 @@ export default function useTags(page?: number): ITagsResponse {
     if (page) apiUrl += `page=${page}`;
 
     setLoading(true);
-    setError(null);
+    setError(undefined);
     fetch(apiUrl)
       .then(res => res.json())
       .then(data => {

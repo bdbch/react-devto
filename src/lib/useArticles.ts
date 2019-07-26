@@ -21,7 +21,7 @@ export default function useArticles(
     apiUrl += params.join("&");
 
     setLoading(true);
-    setError(null);
+    setError(undefined);
     fetch(apiUrl)
       .then(res => res.json())
       .then(data => {
