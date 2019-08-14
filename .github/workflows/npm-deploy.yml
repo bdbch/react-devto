@@ -15,6 +15,8 @@ jobs:
           node-version: '11.x'
       - name: Setup NPM
         run: echo '//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}'>.npmrc
+      - name: Install NPM packages
+        run: npm install
       - name: build
         run: npm run build
       - name: publish
