@@ -2,6 +2,10 @@ import { useEffect, useState } from "react";
 
 import { ITag, ITagsResponse } from "..";
 
+/**
+ * returns a list of tags
+ * @param page filter by pagination
+ */
 export default function useTags(page?: number): ITagsResponse {
   const [tags, setTags] = useState<ITag[]>([]);
   const [loading, setLoading] = useState(false);

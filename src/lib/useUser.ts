@@ -2,6 +2,11 @@ import { useCallback, useState } from "react";
 
 import { IUser, IUserResponse } from "..";
 
+/**
+ * returns a dev.to user by either the username or id
+ * @param username the users username
+ * @param id the users id
+ */
 export default function useUser(username?: string, id?: string): IUserResponse {
   const [user, setUser] = useState<IUser | undefined>();
   const [loading, setLoading] = useState(false);

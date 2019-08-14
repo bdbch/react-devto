@@ -2,6 +2,9 @@ import { useEffect, useState } from "react";
 
 import { IFollowSuggestionsResponse, IUser } from "..";
 
+/**
+ * returns follow suggestions for new users
+ */
 export default function useFollowSuggestions(): IFollowSuggestionsResponse {
   const [suggestions, setSuggestions] = useState<IUser[]>([]);
   const [loading, setLoading] = useState(false);

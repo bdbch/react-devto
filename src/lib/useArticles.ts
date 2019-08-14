@@ -2,6 +2,12 @@ import { useEffect, useState } from "react";
 
 import { IArticlesResponse, IPost } from "..";
 
+/**
+ * Returns a list of articles
+ * @param page filter articles by pagination
+ * @param tag filter articles by tag
+ * @param username receive articles by username
+ */
 export default function useArticles(
   page?: string,
   tag?: string,
