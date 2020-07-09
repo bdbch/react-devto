@@ -1,5 +1,5 @@
 {
-  "name": "@d2k/react-devto",
+  "name": "@bdbch/react-devto",
   "version": "1.0.8",
   "description": "Dev.to hooks for Github API",
   "main": "./dist/index.js",
