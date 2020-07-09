@@ -8,6 +8,7 @@
   "author": "@d2k",
   "license": "MIT",
   "publishConfig": {
+    "registry": "https://npm.pkg.github.com/",
     "access": "public"
   },
   "keywords": [
